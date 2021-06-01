@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icoIngetec.ico" > 
+
+    
+    <title>Experiencia de la Firma</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+<!--    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
+    <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+      <!--  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+		<!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">-->
+      <!-- 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    
+	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.css"/>
+    
+    
+	<style type="text/css">
+    
+      
+        
+    </style>
+
+</head>
+<body>
+
+
+<div class="container-fluid">
+
+
+      <div class="col-sm-2">
+       <div class="input-group">
+        <div class="input-group-addon">
+         <i class="fa fa-calendar">
+         </i>
+        </div>
+        <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+       </div>
+      </div>
+
+    </div>
+    <table width="100%">
+              <tr  onclick="location.href='https://www.kaplaninternational.com'"  style="  cursor:pointer; ">
+
+
+      
+                     
+                    <td>xxx</td>
+                    <td>dddddddddddd</td>
+                    <td>sssssssssssssssss</td>
+                    <td>333333333333</td>
+                    
+      
+
+          </tr>    
+    </table>	
+    <br>
+    <br>
+    <br>
+   <a href=""> <div id="clickeable" onclick="location.href='https://www.kaplaninternational.com'" >sssss</div></a>
+    <table>
+    
+    <a href=""> 
+        <div  onClick="info.php" style=" div:hover { cursor:pointer; }" >
+                <a href=""> 
+                <tr  onclick="location.href='https://www.kaplaninternational.com'" >
+                                <a href=""> 
+                    <td>xxx</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </a>
+                </tr>
+        </a>
+        </div>
+      </a>
+  	</table>
+<script>
+	$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		date_input.datepicker({
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		})
+	})
+</script>
+
+    
+
+</body>
+</html>

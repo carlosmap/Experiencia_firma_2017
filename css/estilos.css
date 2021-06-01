@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+	/* clase de la tabla donde se listan los proyectos (index.php) */
+	
+	.centrar
+	{
+
+		display: flex; 
+		justify-content: center;	
+
+
+		/*
+		  margin-left: auto;
+		  margin-right: auto;	
+
+		text-align:center;		
+		 margin: 0 auto;
+		
+		display: -webkit-flex; 
+		display: flex;		
+		-webkit-align-items: center; 
+		align-items: center;
+		
+		display: -webkit-flex;
+		display: flex; 
+		-webkit-justify-content: center;		
+		justify-content: center;
+		*/
+	}
+	
+	.TR:hover
+	{
+		background-color:#F7F7F9;
+	}
+	
+	.linea
+	{
+		display:inline-block;
+		width:49%;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:20px;
+
+	}
+
+	.linea2
+	{
+		display:inline-block;
+		width:100%;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:20px;
+
+	}	
+
+	.espacioAzul
+	{
+		width:100%;
+		height:3px;
+		background-color:#0B426B;		
+	}
+	.espacioAzulTexto
+	{
+		color:white;
+		text-align:center;
+		font-size:20px;
+		vertical-align:middle;
+		padding:10px;
+	}
+	
+	.titulos
+	{
+		background-color:#666666;
+		color:white;
+		margin-top:5px;		
+		margin-bottom:5px;
+		font-weight:bold;	 
+		padding:5px;	
+	}
+	
+	.titulo_secccion
+	{
+		text-align:center; 
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+		font-size: 20px;
+	}
+	
+	.desabilitados
+	{
+		background-color:#EEEEEE; 
+		width:100%; 
+		padding:7px; 
+		border:1px solid #CCCCCC; 
+		border-radius:5px;
+	}
+
+	.desabilitados2
+	{
+		background-color:#EEEEEE; 		
+		border:1px solid #CCCCCC; 
+	}	
+	.scroll
+	{
+		
+		overflow-y:visible;
+		overflow-x:hidden;
+	}
+	
+/* CSS PARA EL MENU Y SUB MENU */
+
+.dropdown-menu > li.kopie > a {
+    padding-left:5px;
+}
+ 
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+ }
+  
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;  
+  height: 0;     
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+ 
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+  text-decoration: underline;
+}  
+  
+@media (max-width: 767px) {
+
+  .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #333;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+
+}
+ 
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+  }
+}  
